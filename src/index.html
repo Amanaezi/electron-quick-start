@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Calculator</h1>
+    <input type="number" name="num" id="num" value="0" /><br />
+    <input type="button" value="+" onclick="performOperation('+')" />
+    <input type="button" value="-" onclick="performOperation('-')" />
+    <input type="button" value="*" onclick="performOperation('*')" />
+    <input type="button" value="/" onclick="performOperation('/')" /><br />
+    <input type="button" value="=" onclick="calculate()" /><br />
+    <input type="button" value="1" onclick="setNum(1)" />
+    <input type="button" value="2" onclick="setNum(2)" />
+    <input type="button" value="3" onclick="setNum(3)" /><br />
+    <input type="button" value="4" onclick="setNum(4)" />
+    <input type="button" value="5" onclick="setNum(5)" />
+    <input type="button" value="6" onclick="setNum(6)" /><br />
+    <input type="button" value="7" onclick="setNum(7)" />
+    <input type="button" value="8" onclick="setNum(8)" />
+    <input type="button" value="9" onclick="setNum(9)" /><br />
+    <input type="button" value="C" onclick="reset()" />
+    <input type="button" value="0" onclick="setNum(0)" />
+    <input type="button" value="." onclick="setNum('.')" />
+    <script src="./calculator.js"></script>
+  </body>
+</html>
